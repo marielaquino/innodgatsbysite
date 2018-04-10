@@ -1,0 +1,586 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7w1uluvrzgj3"
+          }
+        },
+        "id": "blogPost",
+        "type": "ContentType",
+        "createdAt": "2018-03-19T20:53:07.766Z",
+        "updatedAt": "2018-03-20T02:06:33.203Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2vlVncSwLOo1wzMGOO89Z4"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2vlVncSwLOo1wzMGOO89Z4"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2vlVncSwLOo1wzMGOO89Z4"
+          }
+        },
+        "publishedVersion": 3,
+        "firstPublishedAt": "2018-03-19T20:53:08.047Z",
+        "publishedAt": "2018-03-20T02:06:33.203Z"
+      },
+      "displayField": "article",
+      "name": "Blog Post",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "article",
+          "name": "Article",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "coverPhoto",
+          "name": "Cover Photo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "author",
+          "name": "Author",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "date",
+          "name": "Date",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "7w1uluvrzgj3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 1,
+        "createdAt": "2018-01-03T19:43:48.081Z",
+        "createdBy": {
+          "sys": {
+            "id": "2vlVncSwLOo1wzMGOO89Z4",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-01-03T19:43:48.081Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2vlVncSwLOo1wzMGOO89Z4",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "6XwpTaSiiI2Ak2Ww0oi6qa",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "icon",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "categoryDescription",
+          "widgetId": "markdown"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "7w1uluvrzgj3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-01-03T19:43:48.072Z",
+        "createdBy": {
+          "sys": {
+            "id": "2vlVncSwLOo1wzMGOO89Z4",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-01-03T19:43:48.663Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2vlVncSwLOo1wzMGOO89Z4",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "2PqfXUJwE8qSYKuM0U6w8M",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "productName",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "slug",
+          "settings": {
+            "helpText": "The slug is auto-generated based on the title field"
+          },
+          "widgetId": "slugEditor"
+        },
+        {
+          "fieldId": "productDescription",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "sizetypecolor",
+          "settings": {
+            "helpText": "To view options as a dropdown, add pre-defined values in the field validation settings"
+          },
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "image",
+          "settings": {
+            "helpText": "By default the first image is treated as a product cover image. If no images are provided, a placeholder icon will be displayed"
+          },
+          "widgetId": "assetGalleryEditor"
+        },
+        {
+          "fieldId": "tags",
+          "settings": {
+            "helpText": ""
+          },
+          "widgetId": "listInput"
+        },
+        {
+          "fieldId": "categories",
+          "settings": {
+            "helpText": "You can choose more than one category"
+          },
+          "widgetId": "entryCardsEditor"
+        },
+        {
+          "fieldId": "price",
+          "widgetId": "numberEditor"
+        },
+        {
+          "fieldId": "brand",
+          "widgetId": "entryCardEditor"
+        },
+        {
+          "fieldId": "quantity",
+          "widgetId": "numberEditor"
+        },
+        {
+          "fieldId": "sku",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "website",
+          "settings": {
+            "helpText": "Add a link to the website where a product is sold"
+          },
+          "widgetId": "singleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "7w1uluvrzgj3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-01-03T19:43:48.163Z",
+        "createdBy": {
+          "sys": {
+            "id": "2vlVncSwLOo1wzMGOO89Z4",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-01-03T19:43:48.565Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2vlVncSwLOo1wzMGOO89Z4",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "sFzTZbSuM8coEwygeUYes",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "companyName",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "logo",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "companyDescription",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "website",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "twitter",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "email",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "phone",
+          "widgetId": "listInput"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "7w1uluvrzgj3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2018-03-19T20:53:08.211Z",
+        "createdBy": {
+          "sys": {
+            "id": "2vlVncSwLOo1wzMGOO89Z4",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-03-20T02:06:33.720Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2vlVncSwLOo1wzMGOO89Z4",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blogPost",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "article",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "coverPhoto",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "date",
+          "widgetId": "datePicker"
+        }
+      ]
+    }
+  ],
+  "locales": [
+    {
+      "name": "US English",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "2zZjZkbDtu3cJLT6zpOK2W",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7w1uluvrzgj3"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2vlVncSwLOo1wzMGOO89Z4"
+          }
+        },
+        "createdAt": "2018-01-03T19:43:44Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2vlVncSwLOo1wzMGOO89Z4"
+          }
+        },
+        "updatedAt": "2018-01-03T19:43:44Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Developer",
+      "description": "Allows reading Entries and managing API Keys",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": "all"
+      },
+      "sys": {
+        "type": "Role",
+        "id": "2A0g26aDerxLYgqK2hyORM",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7w1uluvrzgj3"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2vlVncSwLOo1wzMGOO89Z4"
+          }
+        },
+        "createdAt": "2018-01-03T19:43:44Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2vlVncSwLOo1wzMGOO89Z4"
+          }
+        },
+        "updatedAt": "2018-01-03T19:43:44Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "2A1Dfx5yKJK2Lq31dbzufY",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7w1uluvrzgj3"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2vlVncSwLOo1wzMGOO89Z4"
+          }
+        },
+        "createdAt": "2018-01-03T19:43:44Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2vlVncSwLOo1wzMGOO89Z4"
+          }
+        },
+        "updatedAt": "2018-01-03T19:43:44Z"
+      }
+    }
+  ]
+}
